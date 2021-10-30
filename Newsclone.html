@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stationary</title>
+
+    <link rel="shortcut icon" href="images/Vigour Mono Black.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stty.css">
+</head>
+<body>
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-dark  bg-dark">
+        <div class="container">
+            <a href="index.html" class="logo-wrapper">
+                <img src="images/Vigour Mono.png"  class="logo" />
+            </a>
+        <a class="navbar-brand mr-lg-5 font-weight-bold text-primary" href="https://www.dawn.com/" target="_blank">News Clone</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item ">
+              <a class="nav-link font-weight-normal" href="" target="_blank">Home</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link font-weight-normal ml-lg-3" href="">Latest News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-weight-normal ml-lg-3" href="">Sports Updates</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </nav>
+    </header>
+
+<br>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="images/one.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="images/two.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/pic3.PNG" style="width:100%">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+    
+    
+
+
+
+
+<div class="container mt-5">
+
+    <div class="jumbotron">
+        <h1 class="display-4">About News </h1>
+        <p class="lead" style="text-align: justify;">News is information about current events. This may be provided through many different media: word of mouth, printing, postal systems, broadcasting, electronic communication, or through the testimony of observers and witnesses to events. News is sometimes called "hard news" to differentiate it from soft media.</p>
+        <hr class="my-4">
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      </div>
+
+    <div class="text-dark card-deck mt-5 mb-5">
+        <div class="card">
+            <iframe width="348" height="290"
+            src="https://www.youtube.com/embed/_d-uhkdi4fU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+          <div class="card-body">
+            <h3 class="card-title">Govt Big Surprize</h3>
+            <span class="font-weight-bolder text-primary">03/02/2021</span>
+            <div>
+                <span class="text-muted font-weight-normal">Time: 01:00 PM</span>
+                <span class="text-muted font-weight-normal">Day: Monday</span>
+            </div>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Islamabad, Pakistan</small>
+          </div>
+        </div>
+        <div class="card">
+            <iframe width="348" height="290"
+            src="https://www.youtube.com/embed/mG_fTzuCbA4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+          <div class="card-body">
+            <h3 class="card-title">Headlines</h3>
+            <span class="font-weight-bolder text-primary">14/03/2021</span>
+            <div>
+                <span class="text-muted font-weight-normal">Time: 12:00 PM</span>
+                <span class="text-muted font-weight-normal">Day: Tuesday</span>
+            </div>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Rawalpindi, Pakistan</small>
+          </div>
+        </div>
+        <div class="card">
+          <iframe width="348" height="290"
+          src="https://www.youtube.com/embed/FklO6eGIJk8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+          <div class="card-body">
+            <h3 class="card-title">News</h3>
+            <span class="font-weight-bolder text-primary"></span>
+            <div>
+                <span class="text-muted font-weight-normal"></span>
+                <span class="text-muted font-weight-normal"></span>
+            </div>
+            
+
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Islamabad, Pakistan</small>
+          </div>
+        </div>
+      </div>
+</div>
+
+
+
+  
+    
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="re.js"></script>
+</body>
+</html>
